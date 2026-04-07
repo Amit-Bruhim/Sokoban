@@ -1,0 +1,81 @@
+4 ['R', 'L', 'L', 'L']
+Problem #1 with astar took: 0.17755913734436035 seconds.
+4 ['R', 'L', 'L', 'L']
+Problem #1 with gbfs took: 0.17603421211242676 seconds.
+10 ['L', 'L', 'U', 'U', 'R', 'R', 'U', 'U', 'L', 'L']
+Problem #2 with astar took: 0.16333770751953125 seconds.
+10 ['L', 'L', 'U', 'U', 'R', 'R', 'U', 'U', 'L', 'L']
+Problem #2 with gbfs took: 0.16681361198425293 seconds.
+9 ['L', 'U', 'R', 'U', 'L', 'D', 'D', 'L', 'L']
+Problem #3 with astar took: 0.18209075927734375 seconds.
+9 ['L', 'U', 'R', 'U', 'L', 'D', 'D', 'L', 'L']
+Problem #3 with gbfs took: 0.177229642868042 seconds.
+17 ['U', 'U', 'L', 'R', 'D', 'D', 'L', 'U', 'U', 'R', 'U', 'L', 'D', 'D', 'D', 'L', 'L']
+Problem #4 with astar took: 0.17067861557006836 seconds.
+17 ['U', 'U', 'L', 'R', 'D', 'D', 'L', 'U', 'U', 'R', 'U', 'L', 'D', 'D', 'D', 'L', 'L']
+Problem #4 with gbfs took: 0.17843842506408691 seconds.
+19 ['U', 'U', 'L', 'R', 'D', 'D', 'L', 'U', 'L', 'U', 'D', 'R', 'R', 'U', 'L', 'L', 'D', 'D', 'L']
+Problem #5 with astar took: 0.19019198417663574 seconds.
+19 ['U', 'U', 'L', 'R', 'D', 'D', 'L', 'U', 'L', 'U', 'D', 'R', 'R', 'U', 'L', 'L', 'D', 'D', 'L']
+Problem #5 with gbfs took: 0.18868350982666016 seconds.
+12 ['R', 'R', 'R', 'R', 'R', 'R', 'U', 'U', 'U', 'U', 'U', 'U']
+Problem #6 with astar took: 0.1679058074951172 seconds.
+12 ['R', 'R', 'R', 'R', 'R', 'R', 'U', 'U', 'U', 'U', 'U', 'U']
+Problem #6 with gbfs took: 0.18057036399841309 seconds.
+20 ['U', 'U', 'R', 'R', 'R', 'R', 'U', 'U', 'L', 'L', 'L', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R']
+Problem #7 with astar took: 0.16573619842529297 seconds.
+20 ['U', 'U', 'R', 'R', 'R', 'R', 'U', 'U', 'L', 'L', 'L', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R']
+Problem #7 with gbfs took: 0.17680859565734863 seconds.
+20 ['U', 'U', 'R', 'R', 'R', 'R', 'U', 'U', 'L', 'L', 'L', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R']
+Problem #8 with astar took: 0.16370439529418945 seconds.
+20 ['U', 'U', 'R', 'R', 'R', 'R', 'U', 'U', 'L', 'L', 'L', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R']
+Problem #8 with gbfs took: 0.1810135841369629 seconds.
+42 ['R', 'R', 'D', 'R', 'R', 'U', 'R', 'L', 'D', 'L', 'L', 'D', 'D', 'D', 'L', 'L', 'D', 'U', 'R', 'R', 'U', 'U', 'U', 'R', 'R', 'D', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'D', 'D', 'L', 'R', 'R', 'R', 'D', 'R']
+Problem #9 with astar took: 0.17412281036376953 seconds.
+42 ['R', 'R', 'D', 'R', 'R', 'U', 'R', 'L', 'D', 'L', 'L', 'D', 'D', 'D', 'L', 'L', 'D', 'U', 'R', 'R', 'U', 'U', 'U', 'R', 'R', 'D', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'D', 'D', 'L', 'R', 'R', 'R', 'D', 'R']
+Problem #9 with gbfs took: 0.1720595359802246 seconds.
+36 ['R', 'D', 'R', 'R', 'R', 'R', 'D', 'R', 'R', 'U', 'L', 'L', 'L', 'L', 'L', 'D', 'L', 'L', 'U', 'U', 'R', 'D', 'L', 'D', 'R', 'R', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'D', 'L', 'L']
+Problem #10 with astar took: 0.21507549285888672 seconds.
+44 ['R', 'D', 'R', 'R', 'R', 'R', 'D', 'R', 'R', 'R', 'U', 'L', 'L', 'D', 'D', 'D', 'L', 'D', 'R', 'R', 'D', 'D', 'U', 'U', 'L', 'L', 'D', 'R', 'R', 'L', 'L', 'D', 'R', 'R', 'L', 'D', 'R', 'L', 'L', 'L', 'L', 'L', 'L', 'L']
+Problem #10 with gbfs took: 0.21514368057250977 seconds.
+46 ['L', 'L', 'U', 'U', 'R', 'L', 'U', 'U', 'R', 'U', 'U', 'L', 'U', 'U', 'R', 'L', 'L', 'L', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'L', 'L', 'U', 'L', 'L', 'U', 'D', 'R', 'R', 'U', 'R', 'U', 'U', 'U', 'U', 'U', 'L', 'L', 'L', 'U']
+Problem #11 with astar took: 0.1671593189239502 seconds.
+46 ['L', 'L', 'U', 'U', 'R', 'L', 'U', 'U', 'R', 'U', 'U', 'L', 'U', 'U', 'R', 'L', 'L', 'L', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'L', 'L', 'U', 'L', 'L', 'U', 'D', 'R', 'R', 'U', 'R', 'U', 'U', 'U', 'U', 'U', 'L', 'L', 'L', 'U']
+Problem #11 with gbfs took: 0.17749428749084473 seconds.
+no solution
+Problem #12 with astar took: 0.170881986618042 seconds.
+no solution
+Problem #12 with gbfs took: 0.1835188865661621 seconds.
+no solution
+Problem #13 with astar took: 0.16319990158081055 seconds.
+no solution
+Problem #13 with gbfs took: 0.18004727363586426 seconds.
+no solution
+Problem #14 with astar took: 0.3842782974243164 seconds.
+no solution
+Problem #14 with gbfs took: 0.4006979465484619 seconds.
+46 ['U', 'U', 'R', 'R', 'R', 'U', 'U', 'U', 'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'D', 'D', 'D', 'D', 'D', 'L', 'L', 'U', 'U', 'U', 'U', 'U', 'L', 'L', 'L', 'L', 'L']
+Problem #15 with astar took: 0.1625964641571045 seconds.
+46 ['U', 'U', 'R', 'R', 'R', 'U', 'U', 'U', 'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'D', 'D', 'D', 'D', 'D', 'L', 'L', 'U', 'U', 'U', 'U', 'U', 'L', 'L', 'L', 'L', 'L']
+Problem #15 with gbfs took: 0.17997527122497559 seconds.
+50 ['U', 'U', 'R', 'R', 'R', 'U', 'U', 'L', 'L', 'U', 'R', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'D', 'D', 'D', 'D', 'D', 'L', 'L', 'L', 'L', 'U', 'U', 'U', 'L', 'L', 'L', 'U', 'U']
+Problem #16 with astar took: 0.17438340187072754 seconds.
+50 ['U', 'U', 'R', 'R', 'R', 'U', 'U', 'L', 'L', 'U', 'R', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'D', 'D', 'D', 'D', 'D', 'L', 'L', 'L', 'L', 'U', 'U', 'U', 'L', 'L', 'L', 'U', 'U']
+Problem #16 with gbfs took: 0.18556880950927734 seconds.
+155 ['D', 'R', 'U', 'R', 'R', 'D', 'D', 'D', 'L', 'D', 'L', 'L', 'D', 'R', 'D', 'D', 'D', 'L', 'D', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'U', 'L', 'U', 'R', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'R', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'D', 'D', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'U', 'R', 'D', 'R', 'U', 'U', 'D', 'D', 'D', 'D', 'L', 'D', 'D', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'D', 'D', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'L', 'U', 'L', 'L', 'D', 'L']
+Problem #17 with astar took: 0.2221207618713379 seconds.
+155 ['D', 'R', 'U', 'R', 'R', 'D', 'D', 'D', 'L', 'D', 'L', 'L', 'D', 'R', 'D', 'D', 'D', 'L', 'D', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'U', 'L', 'U', 'R', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'D', 'R', 'U', 'L', 'U', 'R', 'R', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'L', 'D', 'D', 'D', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'U', 'R', 'D', 'R', 'U', 'U', 'D', 'D', 'D', 'D', 'L', 'D', 'D', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'D', 'D', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'L', 'U', 'L', 'L', 'D', 'L']
+Problem #17 with gbfs took: 0.2242891788482666 seconds.
+82 ['D', 'D', 'R', 'R', 'R', 'R', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 'R', 'U', 'L', 'U', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'L', 'D', 'D', 'R', 'L', 'D', 'D', 'L', 'L', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'D', 'U', 'L', 'D', 'R', 'U', 'R', 'D', 'U', 'R', 'D', 'U', 'R', 'D', 'U', 'R', 'D', 'R', 'D', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R']
+Problem #18 with astar took: 0.7677524089813232 seconds.
+82 ['D', 'D', 'R', 'R', 'R', 'R', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 'R', 'U', 'L', 'U', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'L', 'D', 'D', 'R', 'L', 'D', 'D', 'L', 'L', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'D', 'U', 'L', 'D', 'R', 'U', 'R', 'D', 'U', 'R', 'D', 'U', 'R', 'D', 'U', 'R', 'D', 'R', 'D', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R']
+Problem #18 with gbfs took: 0.6978237628936768 seconds.
+no solution
+Problem #19 with astar took: 0.18000268936157227 seconds.
+no solution
+Problem #19 with gbfs took: 0.18652844429016113 seconds.
+134 ['U', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'R', 'R', 'U', 'U', 'R', 'L', 'U', 'U', 'U', 'U', 'U', 'U', 'U', 'U', 'R', 'L', 'U', 'U', 'U', 'U', 'U', 'U', 'R', 'L', 'U', 'U', 'R', 'R', 'R', 'D', 'U', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'R', 'R', 'U', 'U', 'R', 'L', 'U', 'U', 'U', 'U', 'U', 'U', 'U', 'U', 'R', 'L', 'U', 'U', 'U', 'U', 'U', 'U', 'R', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'L', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'R', 'R']
+Problem #20 with astar took: 0.35118842124938965 seconds.
+134 ['U', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'R', 'R', 'U', 'U', 'R', 'L', 'U', 'U', 'U', 'U', 'U', 'U', 'U', 'U', 'R', 'L', 'U', 'U', 'U', 'U', 'U', 'U', 'R', 'L', 'U', 'U', 'R', 'R', 'R', 'D', 'U', 'R', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'R', 'R', 'U', 'U', 'R', 'L', 'U', 'U', 'U', 'U', 'U', 'U', 'U', 'U', 'R', 'L', 'U', 'U', 'U', 'U', 'U', 'U', 'R', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'D', 'D', 'L', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'L', 'R', 'D', 'D', 'R', 'R']
+Problem #20 with gbfs took: 0.35501909255981445 seconds.
+Submission took: 9.120695114135742 seconds.

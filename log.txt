@@ -1,0 +1,81 @@
+no solution
+Problem #1 with astar took: 0.19338011741638184 seconds.
+no solution
+Problem #1 with gbfs took: 0.17421841621398926 seconds.
+no solution
+Problem #2 with astar took: 0.18103504180908203 seconds.
+no solution
+Problem #2 with gbfs took: 0.16399335861206055 seconds.
+9 ['L', 'U', 'R', 'U', 'L', 'D', 'D', 'L', 'L']
+Problem #3 with astar took: 0.17352747917175293 seconds.
+9 ['L', 'U', 'R', 'U', 'L', 'D', 'D', 'L', 'L']
+Problem #3 with gbfs took: 0.1617724895477295 seconds.
+17 ['U', 'U', 'L', 'R', 'D', 'D', 'L', 'U', 'U', 'R', 'U', 'L', 'D', 'D', 'D', 'L', 'L']
+Problem #4 with astar took: 0.17151761054992676 seconds.
+17 ['U', 'U', 'L', 'R', 'D', 'D', 'L', 'U', 'U', 'R', 'U', 'L', 'D', 'D', 'D', 'L', 'L']
+Problem #4 with gbfs took: 0.1644885540008545 seconds.
+19 ['U', 'U', 'L', 'R', 'D', 'D', 'L', 'U', 'L', 'U', 'D', 'R', 'R', 'U', 'L', 'L', 'D', 'D', 'L']
+Problem #5 with astar took: 0.16883182525634766 seconds.
+19 ['U', 'U', 'L', 'R', 'D', 'D', 'L', 'U', 'L', 'U', 'D', 'R', 'R', 'U', 'L', 'L', 'D', 'D', 'L']
+Problem #5 with gbfs took: 0.1680753231048584 seconds.
+no solution
+Problem #6 with astar took: 0.17688536643981934 seconds.
+no solution
+Problem #6 with gbfs took: 0.15948891639709473 seconds.
+no solution
+Problem #7 with astar took: 0.16381525993347168 seconds.
+no solution
+Problem #7 with gbfs took: 0.16588616371154785 seconds.
+no solution
+Problem #8 with astar took: 0.17094850540161133 seconds.
+no solution
+Problem #8 with gbfs took: 0.1703174114227295 seconds.
+no solution
+Problem #9 with astar took: 0.1916182041168213 seconds.
+no solution
+Problem #9 with gbfs took: 0.16687726974487305 seconds.
+no solution
+Problem #10 with astar took: 0.18290400505065918 seconds.
+no solution
+Problem #10 with gbfs took: 0.18386530876159668 seconds.
+no solution
+Problem #11 with astar took: 0.18351173400878906 seconds.
+no solution
+Problem #11 with gbfs took: 0.17997407913208008 seconds.
+24 ['R', 'D', 'R', 'R', 'R', 'R', 'U', 'R', 'U', 'U', 'R', 'R', 'D', 'D', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+Problem #12 with astar took: 0.19055485725402832 seconds.
+24 ['R', 'D', 'R', 'R', 'R', 'R', 'U', 'R', 'U', 'U', 'R', 'R', 'D', 'D', 'R', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+Problem #12 with gbfs took: 0.17970633506774902 seconds.
+no solution
+Problem #13 with astar took: 0.18080663681030273 seconds.
+no solution
+Problem #13 with gbfs took: 0.17219090461730957 seconds.
+14 ['L', 'L', 'L', 'U', 'L', 'L', 'L', 'L', 'U', 'U', 'U', 'R', 'R', 'R']
+Problem #14 with astar took: 0.1716146469116211 seconds.
+14 ['L', 'L', 'L', 'U', 'L', 'L', 'L', 'L', 'U', 'U', 'U', 'R', 'R', 'R']
+Problem #14 with gbfs took: 0.17366623878479004 seconds.
+4 ['L', 'D', 'D', 'R']
+Problem #15 with astar took: 0.18499302864074707 seconds.
+4 ['L', 'D', 'D', 'R']
+Problem #15 with gbfs took: 0.1855332851409912 seconds.
+4 ['L', 'D', 'D', 'R']
+Problem #16 with astar took: 0.1795797348022461 seconds.
+4 ['L', 'D', 'D', 'R']
+Problem #16 with gbfs took: 0.16894793510437012 seconds.
+no solution
+Problem #17 with astar took: 0.17688322067260742 seconds.
+no solution
+Problem #17 with gbfs took: 0.1853334903717041 seconds.
+no solution
+Problem #18 with astar took: 0.19542384147644043 seconds.
+no solution
+Problem #18 with gbfs took: 0.16044139862060547 seconds.
+no solution
+Problem #19 with astar took: 0.16925573348999023 seconds.
+no solution
+Problem #19 with gbfs took: 0.1804487705230713 seconds.
+no solution
+Problem #20 with astar took: 0.2014305591583252 seconds.
+no solution
+Problem #20 with gbfs took: 0.17708134651184082 seconds.
+Submission took: 7.070062875747681 seconds.
