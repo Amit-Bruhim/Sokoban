@@ -1,8 +1,6 @@
 import time
-
 import ex1
 import search
-
 
 def run_problem(func, targs=(), kwargs=None):
     if kwargs is None:
@@ -337,29 +335,29 @@ def format_time(seconds):
 
 def main():
     start = time.time()
-    # problem = [problem1]
-    problem = [
-    test_problem1,
-    test_problem2,
-    test_problem3,
-    test_problem4,
-    test_problem5,
-    test_problem6,
-    test_problem7,
-    test_problem8,
-    test_problem9,
-    test_problem10,
-    test_problem11,
-    test_problem12,
-    test_problem13,
-    test_problem14,
-    test_problem15,
-    test_problem16,
-    test_problem17,
-    test_problem18,
-    test_problem19,
-    test_problem20
-]
+    problem = [test_problem9]
+#     problem = [
+#     test_problem1,
+#     test_problem2,
+#     test_problem3,
+#     test_problem4,
+#     test_problem5,
+#     test_problem6,
+#     test_problem7,
+#     test_problem8,
+#     test_problem9,
+#     test_problem10,
+#     test_problem11,
+#     test_problem12,
+#     test_problem13,
+#     test_problem14,
+#     test_problem15,
+#     test_problem16,
+#     test_problem17,
+#     test_problem18,
+#     test_problem19,
+#     test_problem20
+# ]
 
     for p in problem:
         # print(p)
