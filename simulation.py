@@ -1,6 +1,13 @@
+import os
+import warnings
+
+# Suppress warnings and pygame welcome message before imports
+warnings.filterwarnings("ignore", category=UserWarning)
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+
 import pygame
 import time
-from ex1 import create_pressure_plate_problem
+from search_problem import create_pressure_plate_problem
 
 # Colors
 WHITE = (255, 255, 255)
@@ -11,7 +18,7 @@ RED = (255, 100, 100)     # Key Blocks
 GREEN = (100, 255, 100)   # Goal
 YELLOW = (255, 255, 100)  # Pressure Plates
 ORANGE = (255, 165, 0)    # Pressed Plates
-MAGENTA = (255, 0, 255)   # Agent on Goal (New Color!)
+MAGENTA = (255, 0, 255)   # Agent on Goal
 
 # Constants
 CELL_SIZE = 60
@@ -27,15 +34,16 @@ LOCKED_DOORS = list(range(40, 50))
 
 def build_grid(state, rows, cols, initial_map):
     """
-    Reconstructs the grid from the logical state for visualization.
+    Reconstructs the visual grid based on the current logical state.
+    Handles static elements (walls, goals) and dynamic elements (agent, blocks, plates).
     """
     agent_pos, keys, plates, doors, _ = state
     
-    # Start with a grid containing only static elements (Walls and Goals)
+    # Initialize grid with static elements (Walls and Goals)
     grid = [[initial_map[r][c] if initial_map[r][c] in [WALL, GOAL] else FLOOR 
              for c in range(cols)] for r in range(rows)]
     
-    # 1. Place Pressure Plates (Check if they are active or pressed)
+    # 1. Update Pressure Plates (Show as pressed if no longer in 'plates' list)
     for r in range(rows):
         for c in range(cols):
             val = initial_map[r][c]
@@ -44,17 +52,17 @@ def build_grid(state, rows, cols, initial_map):
                 if is_active:
                     grid[r][c] = val
                 else:
-                    grid[r][c] = val + 10
+                    grid[r][c] = val + 10 # Convert to Pressed Plate ID
 
-    # 2. Place Locked Doors from state
+    # 2. Place Locked Doors
     for r, c, val in doors:
         grid[r][c] = val
         
-    # 3. Place Key Blocks from state
+    # 3. Place Key Blocks
     for r, c, val in keys:
         grid[r][c] = val
 
-    # 4. Place the Agent and handle Agent-on-Goal (Value 3)
+    # 4. Place the Agent
     ar, ac = agent_pos
     if initial_map[ar][ac] == GOAL:
         grid[ar][ac] = AGENT_ON_GOAL
@@ -64,13 +72,12 @@ def build_grid(state, rows, cols, initial_map):
     return grid
 
 def draw_board(screen, grid, font):
-    """ Renders the reconstructed grid to the screen """
+    """ Renders the grid and object IDs to the Pygame window """
     for row in range(len(grid)):
         for col in range(len(grid[0])):
             val = grid[row][col]
             rect = pygame.Rect(col * CELL_SIZE, row * CELL_SIZE, CELL_SIZE, CELL_SIZE)
 
-            # Determine color based on cell value
             if val == WALL:
                 color = BLACK
             elif val == FLOOR:
@@ -78,7 +85,7 @@ def draw_board(screen, grid, font):
             elif val == AGENT:
                 color = BLUE
             elif val == AGENT_ON_GOAL:
-                color = MAGENTA # New distinctive color for Agent on Goal
+                color = MAGENTA
             elif val == GOAL:
                 color = GREEN
             elif val in KEY_BLOCKS:
@@ -95,29 +102,16 @@ def draw_board(screen, grid, font):
             pygame.draw.rect(screen, color, rect)
             pygame.draw.rect(screen, GRAY, rect, 1) # Cell border
 
-            # Render the ID number of the object
+            # Render ID text in the center of the cell
             text = font.render(str(val), True, BLACK)
             text_rect = text.get_rect(center=rect.center)
             screen.blit(text, text_rect)
 
-def run_simulation():
-    # The map structure with the 99 border
-    initial_map = (
-        (99, 99, 99, 99, 99, 99, 99, 99, 99, 99),
-        (99, 1, 98, 98, 99, 98, 10, 20, 99, 99),
-        (99, 98, 99, 98, 98, 98, 99, 99, 99, 99),
-        (99, 98, 98, 40, 99, 98, 98, 98, 98, 99),
-        (99, 99, 99, 98, 99, 99, 99, 99, 98, 99),
-        (99, 98, 98, 98, 99, 98, 42, 98, 98, 99),
-        (99, 12, 99, 99, 99, 98, 99, 99, 99, 99),
-        (99, 22, 99, 21, 11, 98, 98, 41, 99, 99),
-        (99, 99, 99, 99, 99, 99, 99, 98, 2, 99),
-        (99, 99, 99, 99, 99, 99, 99, 99, 99, 99)
-    )
-
-    # Sequence of moves
-    actions = ['R', 'R', 'D', 'R', 'R', 'U', 'R', 'L', 'D', 'L', 'L', 'D', 'D', 'D', 'L', 'L', 'D', 'U', 'R', 'R', 'U', 'U', 'U', 'R', 'R', 'D', 'R', 'R', 'R', 'D', 'D', 'L', 'L', 'L', 'D', 'D', 'L', 'R', 'R', 'R', 'D', 'R']
-    
+def run_simulation(initial_map, actions):
+    """
+    Main simulation loop. Receives the map and solution actions,
+    then executes them step-by-step using the problem logic.
+    """
     pygame.init()
     rows, cols = len(initial_map), len(initial_map[0])
     screen = pygame.display.set_mode((cols * CELL_SIZE, rows * CELL_SIZE))
@@ -125,7 +119,7 @@ def run_simulation():
     clock = pygame.time.Clock()
     font = pygame.font.SysFont(None, 24)
 
-    # Initialize the problem and state
+    # Initialize logic from search_problem
     problem = create_pressure_plate_problem(initial_map)
     state = (
         problem.find_agent(initial_map),
@@ -135,37 +129,34 @@ def run_simulation():
         0
     )
 
-    # DRAW INITIAL STATE BEFORE WAITING
+    # Initial frame display
     current_grid = build_grid(state, rows, cols, initial_map)
     screen.fill(WHITE)
     draw_board(screen, current_grid, font)
     pygame.display.flip()
+    time.sleep(1.5)
 
-    # WAIT FOR 2 SECONDS BEFORE STARTING
-    time.sleep(2)
-
-    # Main simulation loop
+    # Execute actions
     for action in actions:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 return
 
+        # Find the next state based on the current action
         for a, next_state in problem.successor(state):
             if a == action:
                 state = next_state
                 break
         
+        # Update display
         current_grid = build_grid(state, rows, cols, initial_map)
         screen.fill(WHITE)
         draw_board(screen, current_grid, font)
         pygame.display.flip()
         
-        time.sleep(0.5) 
+        time.sleep(0.4) 
         clock.tick(60)
 
     time.sleep(1.5)
     pygame.quit()
-
-if __name__ == "__main__":
-    run_simulation()

@@ -144,7 +144,7 @@ def graph_search(problem, fringe):
         node = fringe.pop()
     
         if problem.goal_test(node.state):
-            print("Goal reached!")
+            # print("Goal reached!")
             return node, expanded
         
         if node.state not in closed:
