@@ -22,9 +22,9 @@ This project showcases the evolution of an intelligent agent solving Pressure Pl
 
 The repository comprises two main approaches:
 
-- Deterministic Solving: Focuses on classical state-space search using A* Search and Greedy Best-First Search (GBFS) algorithms. In this phase, the environment is predictable, and the agent's focus is on finding the most efficient sequence of actions to solve the puzzle.
+- **Deterministic Solving**: Focuses on classical state-space search using A* Search and Greedy Best-First Search (GBFS) algorithms. In this phase, the environment is predictable, and the agent's focus is on finding the most efficient sequence of actions to solve the puzzle.
 
-- Stochastic Solving: Introduces environmental uncertainty where actions are probabilistic (the agent may "slip"). This phase utilizes Markov Decision Processes (MDP) and Value Iteration to create a resilient policy that can recover from unintended movements and still guarantee reaching the objective.
+- **Stochastic Solving**: Introduces environmental uncertainty where actions are probabilistic (the agent may "slip"). This phase utilizes Markov Decision Processes (MDP) and Value Iteration to create a resilient policy that can recover from unintended movements and still guarantee reaching the objective.
 ---
 
 ## The Environment
@@ -67,7 +67,7 @@ To optimize the agent's policy in the MDP environment, a scoring system is appli
 ## Features
 
 - **Live Visual Simulation:** A real-time graphical simulation for deterministic solving (A*), allowing you to watch the agent navigate the grid and interact with objects.
-- **Dual-Search Implementation:** Support for both **A* Search** and **Greedy Best-First Search (GBFS)** to find optimal and efficient paths.
+- **Dual-Search Implementation:** Support for both A* Search and Greedy Best-First Search (GBFS) to find optimal and efficient paths.
 - **Stochastic Control Logging:** Detailed terminal output for the MDP environment, tracking recommended actions vs. actual outcomes to visualize environmental "slips."
 - **Policy Robustness:** Advanced **Value Iteration** logic that enables the agent to recover from unintended movements and recalculate paths dynamically.
 - **Grid Environment Logic:** Complete implementation of game mechanics, including pressure plates, locked doors, and multi-step objectives.
@@ -75,8 +75,12 @@ To optimize the agent's policy in the MDP environment, a scoring system is appli
 
 ## Requirements
 
-- **Python 3.13**: The core programming language.
-- **Git**: To clone the repository.
+The project requires the following environment and libraries to run:
+
+- **Python 3.13+**: The core programming language used for all logic and solvers.
+- **NumPy**: Essential for matrix operations and performing Value Iteration in the MDP environment.
+- **Pygame**: Used to render the live visual simulation for the deterministic pathfinding.
+- **Git**: Required for cloning the repository.
 
 ---
 
